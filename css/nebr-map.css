@@ -1,0 +1,39 @@
+text[data-id='35'][class*='hover_data'] {
+                     fill: #E5A923 !important;
+                     font-weight: 700 !important;
+                    }
+
+body.frozen-active #tooltip { display: none !important; }
+body.frozen-active [data-id] { pointer-events: none !important; }
+body.frozen-active .selected-area {
+  fill: #58595B !important;
+  stroke: #58595B !important;
+}
+body.frozen-active .selected-label {
+  fill: white !important;
+  font-weight: 700 !important;
+}
+body.frozen-active .selected-label[data-id='35'] {
+  fill: #E5A923 !important;
+}
+
+#frozen-tooltip {
+  background-color: white;
+  border: 1px solid #F5F5F5;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+  font-size: 14px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  max-width: 240px;
+  padding: 10px;
+  position: absolute;
+  display: none;
+  z-index: 9999;
+}
+
+#close-frozen-tooltip {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
